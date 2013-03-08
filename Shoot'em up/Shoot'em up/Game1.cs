@@ -117,6 +117,9 @@ namespace Shoot_em_up
             Camera.Update(gameTime, player.Vector, GraphicsDevice.Viewport);
             for (int i = 0; i < Zombies.Count; i++) Zombies[i].Update(gameTime, player.Vector);
 
+            //Ist Fenster nicht mehr aktiv, dann pausier das Spiel
+            if (!IsActive) menu.menuState = MenuState.Pause;
+
             //Menu Items
             if (menu.menuState == MenuState.Main)
             {
