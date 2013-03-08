@@ -18,10 +18,19 @@ namespace Shoot_em_up
     public class Enemy : Microsoft.Xna.Framework.DrawableGameComponent
     {
         SpriteBatch _spriteBatch;
+
+        //Texturen
         Texture2D _Enemytexture, _healthTexture;
+
+        //Soundeffekte
+        SoundEffectInstance _GetHitted;
+        SoundEffect _Dieing;
+
+        //Vectoren und Rechtecke
         Vector2 _vector, _move;
         Rectangle _animation, _healthBox, _healthSource, _drawRect;
 
+        //Sonstiges
         float _health, _maxhealth, _frameTime, _moveTime = 0, _scale = 1.2f;
         viewDirection _direction;
 
@@ -65,6 +74,8 @@ namespace Shoot_em_up
             _spriteBatch = spriteBatch;
             _Enemytexture = game.Content.Load<Texture2D>("Texturen\\Zombie\\Zombie");
             _healthTexture = game.Content.Load<Texture2D>("Texturen\\Zombie\\HealthBar");
+            _GetHitted = game.Content.Load<SoundEffect>("Sounds\\Zombie\\Hitted").CreateInstance();
+            _Dieing = game.Content.Load<SoundEffect>("Sounds\\Zombie\\Dieing");
         }
 
         /// <summary>
@@ -182,6 +193,14 @@ namespace Shoot_em_up
         private bool IsPlayerNear(Vector2 player)
         {
             return Vector2.Distance(_vector, player) < 200;
+        }
+
+        public void GetHitted(float Strenght)
+        {
+            _health -= Strenght;
+            //Play Sound
+            if (_GetHitted.State == SoundState.Stopped && _health > 0) _GetHitted.Play();
+            if (_health <= 0) _Dieing.Play();
         }
     }
 }

@@ -208,7 +208,7 @@ namespace Shoot_em_up
                     //Zombie auf Schaden überprüfen
                     if (player.weapon.HasHitted(zombie.HitBox))
                     {
-                        zombie.Health -= 4.1f;
+                        zombie.GetHitted(4.1f);
                         if (zombie.Health <= 0) player.Score += 20;
                         blood.CreateBlood(new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y));
                     }
