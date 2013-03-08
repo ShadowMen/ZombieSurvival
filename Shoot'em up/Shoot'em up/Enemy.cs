@@ -84,6 +84,10 @@ namespace Shoot_em_up
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         public void Update(GameTime gameTime, Vector2 PlayerVector)
         {
+            //Sound Pausieren
+            if (Game1.gameState == GameState.Paused && _GetHitted.State == SoundState.Playing) _GetHitted.Pause();
+            if (Game1.gameState == GameState.Game && _GetHitted.State == SoundState.Paused) _GetHitted.Resume();
+
             if (Game1.gameState == GameState.Game)
             {
                 Random rnd = new Random(gameTime.TotalGameTime.Milliseconds);
@@ -198,8 +202,9 @@ namespace Shoot_em_up
         public void GetHitted(float Strenght)
         {
             _health -= Strenght;
+
             //Play Sound
-            if (_GetHitted.State == SoundState.Stopped && _health > 0) _GetHitted.Play();
+            if (_GetHitted.State != SoundState.Playing && _health > 0) _GetHitted.Play();
             if (_health <= 0) _Dieing.Play();
         }
     }

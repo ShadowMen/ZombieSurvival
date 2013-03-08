@@ -70,7 +70,7 @@ namespace Shoot_em_up
         {
             Bullet newBullet = new Bullet();
             newBullet.Shoot(PlayerCenter, new Vector2(Mouse.GetState().X, Mouse.GetState().Y) - Camera._position);
-            _Shoot.Play(0.5f, 1f, 0f);
+            _Shoot.Play();
             Bullets.Add(newBullet);
         }
 

@@ -112,6 +112,11 @@ namespace Shoot_em_up
         {
             newKbState = Keyboard.GetState();
 
+            //Objekte Aktualisieren
+            playerHUD.Update(gameTime, GraphicsDevice.Viewport, player.Health, player.MaxHealth, player.Score);
+            Camera.Update(gameTime, player.Vector, GraphicsDevice.Viewport);
+            for (int i = 0; i < Zombies.Count; i++) Zombies[i].Update(gameTime, player.Vector);
+
             //Menu Items
             if (menu.menuState == MenuState.Main)
             {
@@ -164,7 +169,6 @@ namespace Shoot_em_up
 
             if (gameState == GameState.Game)
             {
-                Camera.Update(gameTime, player.Vector, GraphicsDevice.Viewport);
                 elapsedTime -= (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
                 //Zombie Spawnen
@@ -199,8 +203,6 @@ namespace Shoot_em_up
                 
                 foreach (Enemy zombie in Zombies)
                 {
-                    zombie.Update(gameTime, player.Vector);
-
                     //Überprüfung ob Zombie vor oder hinter dem Spieler ist
                     if (player.Vector.Y + 32 < zombie.Vector.Y + 40) zombie.DrawOrder = player.DrawOrder + 1;
                     else zombie.DrawOrder = player.DrawOrder - 1;
@@ -225,9 +227,6 @@ namespace Shoot_em_up
                         Vector2 Distance = new Vector2(player.HitBox.Center.X, player.HitBox.Center.Y) - new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y);
                         player.Vector += Distance;
                     }
-
-                    //HUD aktualisieren
-                    playerHUD.Update(gameTime, GraphicsDevice.Viewport, player.Health, player.MaxHealth, player.Score);
                 }
 
             }
