@@ -116,7 +116,7 @@ namespace Shoot_em_up
             playerHUD.Update(gameTime, GraphicsDevice.Viewport, player.Health, player.MaxHealth, player.Score);
             Camera.Update(gameTime, player.Vector, GraphicsDevice.Viewport);
             for (int i = 0; i < Zombies.Count; i++) Zombies[i].Update(gameTime, player.Vector);
-            
+
             //Menu Items
             if (menu.menuState == MenuState.Main)
             {
