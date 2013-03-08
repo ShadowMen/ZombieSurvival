@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Font.bmp</Source>
+      <Name>Font</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Font.xnb</Output>
+      <Time>2013-03-04T21:27:10.136231+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Player\Bullet.png</Source>
+      <Name>Texturen\Player\Bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Player\Bullet.xnb</Output>
+      <Time>2013-02-23T14:50:20.4831005+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Player\Player.png</Source>
+      <Name>Texturen\Player\Player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Player\Player.xnb</Output>
+      <Time>2013-02-24T16:01:07.3819239+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Zombie\HealthBar.png</Source>
+      <Name>Texturen\Zombie\HealthBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Zombie\HealthBar.xnb</Output>
+      <Time>2013-02-24T21:36:17.8151749+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Zombie\Zombie.png</Source>
+      <Name>Texturen\Zombie\Zombie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Zombie\Zombie.xnb</Output>
+      <Time>2013-03-03T22:21:29.0412515+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Blood\Blood.png</Source>
+      <Name>Texturen\Blood\Blood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Blood\Blood.xnb</Output>
+      <Time>2013-03-08T16:26:29.0244178+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Ground\Ground.jpg</Source>
+      <Name>Texturen\Ground\Ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Ground\Ground.xnb</Output>
+      <Time>2013-02-26T21:41:42.2972474+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Menu\MainBg.png</Source>
+      <Name>Texturen\Menu\MainBg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Menu\MainBg.xnb</Output>
+      <Time>2013-03-06T19:07:24.184628+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Menu\PauseBg.png</Source>
+      <Name>Texturen\Menu\PauseBg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Menu\PauseBg.xnb</Output>
+      <Time>2013-03-06T18:36:13.956657+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Texturen\Crosshair.png</Source>
+      <Name>Texturen\Crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Crosshair.xnb</Output>
+      <Time>2013-03-08T16:00:47.2402328+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Weapon\Shoot.wav</Source>
+      <Name>Sounds\Weapon\Shoot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Sounds\Weapon\Shoot.xnb</Output>
+      <Time>2013-03-08T17:15:15.1587831+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em upContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em upContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-11-19T21:13:30.0276467+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
