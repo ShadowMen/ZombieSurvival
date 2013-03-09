@@ -205,7 +205,11 @@ namespace Shoot_em_up
 
             //Play Sound
             if (_GetHitted.State != SoundState.Playing && _health > 0) _GetHitted.Play();
-            if (_health <= 0) _Dying.Play();
+            if (_health <= 0)
+            {
+                _GetHitted.Stop();
+                _Dying.Play();
+            }
         }
     }
 }
