@@ -218,18 +218,18 @@ namespace Shoot_em_up
                         blood.CreateBlood(new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y));
                     }
 
-                    ////Spieler auf Schaden überprüfen
-                    //if (zombie.HitBox.Intersects(player.HitBox))
-                    //{
-                    //    player.Health -= 2.3f;
+                    //Spieler auf Schaden überprüfen
+                    if (zombie.HitBox.Intersects(player.HitBox))
+                    {
+                        player.Health -= 2.3f;
 
-                    //    //Ist Spieler tot gehe ins Hauptmenu
-                    //    if (player.Health <= 0) menu.menuState = MenuState.Main;
+                        //Ist Spieler tot gehe ins Hauptmenu
+                        if (player.Health <= 0) menu.menuState = MenuState.Main;
 
-                    //    //Spieler vom Zombie wegschlagen
-                    //    Vector2 Distance = new Vector2(player.HitBox.Center.X, player.HitBox.Center.Y) - new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y);
-                    //    player.Vector += Distance;
-                    //}
+                        //Spieler vom Zombie wegschlagen
+                        Vector2 Distance = new Vector2(player.HitBox.Center.X, player.HitBox.Center.Y) - new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y);
+                        player.Vector += Distance;
+                    }
                 }
 
             }
