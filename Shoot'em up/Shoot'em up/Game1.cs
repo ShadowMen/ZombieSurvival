@@ -194,23 +194,20 @@ namespace Shoot_em_up
                         if (a == i) continue;
 
                         //gegenseitig abprallen
-                        if (Zombies[i].HitBox.Intersects(Zombies[a].HitBox) && Zombies[i].FollowPlayer)
+                        if (Zombies[i].HitBox.Intersects(Zombies[a].HitBox))
                         {
                             Vector2 Distace = new Vector2(Zombies[i].HitBox.Center.X, Zombies[i].HitBox.Center.Y) - new Vector2(Zombies[a].HitBox.Center.X, Zombies[a].HitBox.Center.Y);
                             Distace.Normalize();
                             Zombies[i].Vector += Distace;
+                            if (!Zombies[i].FollowPlayer) Zombies[i].MoveVector *= -1;
                         }
-
-                        //Zombie vor oder hinter Zombie zeichnen
-                        if (Zombies[i].Vector.Y < Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder - 1;
-                        else if (Zombies[i].Vector.Y > Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder + 1;
                     }
                 }
                 
                 foreach (Enemy zombie in Zombies)
                 {
                     //Überprüfung ob Zombie vor oder hinter dem Spieler ist
-                    if (player.Vector.Y + 32 < zombie.Vector.Y + 40) zombie.DrawOrder = player.DrawOrder + 1;
+                    if (player.HitBox.Bottom < zombie.HitBox.Bottom) zombie.DrawOrder = player.DrawOrder + 1;
                     else zombie.DrawOrder = player.DrawOrder - 1;
 
                     //Zombie auf Schaden überprüfen
@@ -221,18 +218,18 @@ namespace Shoot_em_up
                         blood.CreateBlood(new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y));
                     }
 
-                    //Spieler auf Schaden überprüfen
-                    if (zombie.HitBox.Intersects(player.HitBox))
-                    {
-                        player.Health -= 2.3f;
+                    ////Spieler auf Schaden überprüfen
+                    //if (zombie.HitBox.Intersects(player.HitBox))
+                    //{
+                    //    player.Health -= 2.3f;
 
-                        //Ist Spieler tot gehe ins Hauptmenu
-                        if (player.Health <= 0) menu.menuState = MenuState.Main;
+                    //    //Ist Spieler tot gehe ins Hauptmenu
+                    //    if (player.Health <= 0) menu.menuState = MenuState.Main;
 
-                        //Spieler vom Zombie wegschlagen
-                        Vector2 Distance = new Vector2(player.HitBox.Center.X, player.HitBox.Center.Y) - new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y);
-                        player.Vector += Distance;
-                    }
+                    //    //Spieler vom Zombie wegschlagen
+                    //    Vector2 Distance = new Vector2(player.HitBox.Center.X, player.HitBox.Center.Y) - new Vector2(zombie.HitBox.Center.X, zombie.HitBox.Center.Y);
+                    //    player.Vector += Distance;
+                    //}
                 }
 
             }
