@@ -24,7 +24,7 @@ namespace Shoot_em_up
 
         //Soundeffekte
         SoundEffectInstance _GetHitted;
-        SoundEffect _Dieing;
+        SoundEffect _Dying;
 
         //Vectoren und Rechtecke
         Vector2 _vector, _move;
@@ -75,7 +75,7 @@ namespace Shoot_em_up
             _Enemytexture = game.Content.Load<Texture2D>("Texturen\\Zombie\\Zombie");
             _healthTexture = game.Content.Load<Texture2D>("Texturen\\Zombie\\HealthBar");
             _GetHitted = game.Content.Load<SoundEffect>("Sounds\\Zombie\\Hitted").CreateInstance();
-            _Dieing = game.Content.Load<SoundEffect>("Sounds\\Zombie\\Dieing");
+            _Dying = game.Content.Load<SoundEffect>("Sounds\\Zombie\\Dieing");
         }
 
         /// <summary>
@@ -205,7 +205,7 @@ namespace Shoot_em_up
 
             //Play Sound
             if (_GetHitted.State != SoundState.Playing && _health > 0) _GetHitted.Play();
-            if (_health <= 0) _Dieing.Play();
+            if (_health <= 0) _Dying.Play();
         }
     }
 }

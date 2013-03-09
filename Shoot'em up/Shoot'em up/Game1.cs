@@ -56,7 +56,7 @@ namespace Shoot_em_up
             Content.RootDirectory = "Content";
 
             //Window Size
-            Window.Title = "Zombie Survive";
+            Window.Title = "Zombie Survival";
             graphics.PreferredBackBufferHeight = 600;
             graphics.PreferredBackBufferWidth = 800;
 

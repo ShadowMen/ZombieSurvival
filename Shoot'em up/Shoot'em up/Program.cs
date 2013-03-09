@@ -5,7 +5,7 @@ namespace Shoot_em_up
 #if WINDOWS || XBOX
     static class Program
     {
-        const string MutexID = "Zombie Survive";
+        const string MutexID = "Zombie Survival";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
