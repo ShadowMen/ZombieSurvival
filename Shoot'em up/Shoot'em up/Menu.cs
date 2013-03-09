@@ -27,6 +27,7 @@ namespace Shoot_em_up
         SpriteBatch _spriteBatch;
         SpriteFont _font;
         Texture2D _backgroundTexture, _pauseTexture;
+        SoundEffect _select;
         Viewport _view;
 
         KeyboardState _old, _new;
@@ -62,6 +63,7 @@ namespace Shoot_em_up
             _font = game.Content.Load<SpriteFont>("Font");
             _backgroundTexture = game.Content.Load<Texture2D>("Texturen\\Menu\\MainBg");
             _pauseTexture = game.Content.Load<Texture2D>("Texturen\\Menu\\PauseBg");
+            _select = game.Content.Load<SoundEffect>("Sounds\\Menu\\Select");
         }
 
         /// <summary>
@@ -86,8 +88,16 @@ namespace Shoot_em_up
                 _scaleGrow *= -1;
             }
 
-            if (IsKeyPressed(Keys.Up)) selectedItem--;
-            else if (IsKeyPressed(Keys.Down)) selectedItem++;
+            if (IsKeyPressed(Keys.Up))
+            {
+                _select.Play();
+                selectedItem--;
+            }
+            else if (IsKeyPressed(Keys.Down))
+            {
+                _select.Play();
+                selectedItem++;
+            }
 
             if (selectedItem > _items.Count - 1) selectedItem = 0;
             else if(selectedItem < 0) selectedItem = _items.Count - 1;
