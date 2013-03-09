@@ -295,10 +295,10 @@ namespace Shoot_em_up
 
         private void ResetGame()
         {
-            for (int i = 0; i < Zombies.Count; i++)
+            while(Zombies.Count > 0)
             {
-                Components.Remove(Zombies[i]);
-                Zombies.RemoveAt(i);
+                Components.Remove(Zombies[0]);
+                Zombies.RemoveAt(0);
             }
             blood.Clear();
             player.Reset();
