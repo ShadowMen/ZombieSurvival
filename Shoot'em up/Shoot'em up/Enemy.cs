@@ -104,7 +104,8 @@ namespace Shoot_em_up
                 _drawRect = new Rectangle((int)_vector.X, (int)_vector.Y, (int)(_animation.Width * _scale), (int)(_animation.Height * _scale));
 
                 //Zombie bewegen
-                if ((_isPlayerNear = IsPlayerNear(PlayerVector)))
+                _isPlayerNear = IsPlayerNear(PlayerVector);
+                if (_isPlayerNear)
                 {
                     Vector2 distanz = PlayerVector - _vector;
                     distanz.Normalize();
