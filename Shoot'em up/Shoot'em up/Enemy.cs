@@ -35,6 +35,7 @@ namespace Shoot_em_up
         viewDirection _direction;
 
         int _frame, _velocity = 100;
+        bool _isPlayerNear;
 
 #region öffentliche Variabeln
         public Vector2 Vector
@@ -64,6 +65,11 @@ namespace Shoot_em_up
         public Rectangle HitBox
         {
             get { return _drawRect; }
+        }
+
+        public bool FollowPlayer
+        {
+            get { return _isPlayerNear; }
         }
 #endregion
 
@@ -98,7 +104,7 @@ namespace Shoot_em_up
                 _drawRect = new Rectangle((int)_vector.X, (int)_vector.Y, (int)(_animation.Width * _scale), (int)(_animation.Height * _scale));
 
                 //Zombie bewegen
-                if (IsPlayerNear(PlayerVector))
+                if ((_isPlayerNear = IsPlayerNear(PlayerVector)))
                 {
                     Vector2 distanz = PlayerVector - _vector;
                     distanz.Normalize();

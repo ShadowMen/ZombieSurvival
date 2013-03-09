@@ -194,7 +194,7 @@ namespace Shoot_em_up
                         if (a == i) continue;
 
                         //gegenseitig abprallen
-                        if (Zombies[i].HitBox.Intersects(Zombies[a].HitBox))
+                        if (Zombies[i].HitBox.Intersects(Zombies[a].HitBox) && Zombies[i].FollowPlayer)
                         {
                             Vector2 Distace = new Vector2(Zombies[i].HitBox.Center.X, Zombies[i].HitBox.Center.Y) - new Vector2(Zombies[a].HitBox.Center.X, Zombies[a].HitBox.Center.Y);
                             Distace.Normalize();
@@ -202,8 +202,8 @@ namespace Shoot_em_up
                         }
 
                         //Zombie vor oder hinter Zombie zeichnen
-                        if (Zombies[i].Vector.Y < Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder + 1;
-                        else if (Zombies[i].Vector.Y > Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder - 1;
+                        if (Zombies[i].Vector.Y < Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder - 1;
+                        else if (Zombies[i].Vector.Y > Zombies[a].Vector.Y) Zombies[i].DrawOrder = Zombies[a].DrawOrder + 1;
                     }
                 }
                 
