@@ -1,0 +1,16 @@
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Font.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Shoot'em up.exe
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Shoot'em up.pdb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\obj\x86\Debug\Shoot'em up.exe
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\obj\x86\Debug\Shoot'em up.pdb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Player\Bullet.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Player\Player.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Zombie\HealthBar.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Zombie\Zombie.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Blood\Blood.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Ground\Ground.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Menu\MainBg.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Menu\PauseBg.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Texturen\Crosshair.xnb
+C:\Users\Nils\Documents\Visual Studio 2010\Projects\Shoot'em up\Shoot'em up\Shoot'em up\bin\x86\Debug\Content\Sounds\Weapon\Shoot.xnb
